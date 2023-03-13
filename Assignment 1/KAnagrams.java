@@ -1,7 +1,7 @@
 
 // Technique: Hash the Elements
-// Time Complexity: O(n)
-// Space Complexity: O(n)
+// Time Complexity: O(n) - Iterate over each string once to create hashmaps with counts of each character, then iterate over the hashmaps to check the differences
+// Space Complexity: O(n) - Create a HashMap for both strings of n and m size so O(n) + O(m) = O(n)
 import java.util.*;
 
 public class KAnagrams {

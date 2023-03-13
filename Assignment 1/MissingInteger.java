@@ -1,6 +1,6 @@
 // Technique: Binary Search Variation
-// Time Complexity: O(log(N))
-// Space Complexity:O(1)
+// Time Complexity: O(log(N)) - Using a form of binary search cuts down the list in half each time to find the missing integer
+// Space Complexity:O(1) - Only created variables to track indices
 public class MissingInteger {
     public static void main(String[] args) {
         System.out.println(missingInteger(new int[] { 1, 2, 3, 4, 6, 7 }, 7));

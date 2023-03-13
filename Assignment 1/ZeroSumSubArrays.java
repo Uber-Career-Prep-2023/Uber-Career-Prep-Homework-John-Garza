@@ -1,7 +1,7 @@
 
 // Technique: One directional computation/total
-// Time Complexity: O(n)
-// Space Complexity: O(n)
+// Time Complexity: O(n) - Iterated over array once to find the overall result
+// Space Complexity: O(n) - Created a hashmap with n elements
 import java.util.*;
 
 public class ZeroSumSubArrays {

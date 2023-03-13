@@ -1,7 +1,7 @@
 
 // Technique: Sort then solve
-// Time Complexity: O(nlogn)
-// Space Complexity: O(n)
+// Time Complexity: O(nlogn) - sorted the list of intervals which is O(nlogn) then iterated over the array to merge the intervals so O(nlogn) + O(n) = O(nlogn)
+// Space Complexity: O(n) - created a result array and list to keep track of the merged arrays so O(2n) = O(n)
 import java.util.*;
 
 public class MergeIntervals {
