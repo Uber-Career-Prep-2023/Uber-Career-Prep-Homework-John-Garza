@@ -9,11 +9,12 @@ public class LinkedList {
         }
     }
 
-    public void insertAtFront(Node head, int val) {
+    public Node insertAtFront(Node head, int val) {
         // Time Complexity: O(1), constant time to insert the node & no shifting needed
         Node newNode = new Node(val);
         newNode.next = head;
         head = newNode;
+        return head;
     }
 
     public void insertAtBack(Node head, int val) {
@@ -74,11 +75,11 @@ public class LinkedList {
     public Node deleteNode(Node head, Node loc) {
         // Time Complexity: O(N), traverse the list to the node before loc in order to
         // delete loc
-        if (head == null || head.equals(loc)) {
+        if (head == null || head == loc) {
             head = null;
         } else {
             Node cur = head;
-            while (cur != null && !cur.next.equals(loc)) {
+            while (cur != null && cur.next != loc) {
                 cur = cur.next;
             }
             cur.next = loc.next;
