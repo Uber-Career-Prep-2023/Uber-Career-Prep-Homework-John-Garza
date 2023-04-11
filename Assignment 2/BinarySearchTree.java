@@ -74,7 +74,7 @@ public class BinarySearchTree {
         // is also O(M) since it traverses the left subtree looking for the maximum.
         // Deleting the individual node is an O(1) operation. so the overall time
         // complexity is O(N) + O(M)
-        deleteHelper(val, this.root);
+        this.root = deleteHelper(val, this.root);
         return val;
     }
 
@@ -136,6 +136,7 @@ public class BinarySearchTree {
     }
 
     int maxVal(Node root) {
+        // get the maximum value of a subtree
         int max = root.data;
         while (root.right != null) {
             max = root.right.data;
