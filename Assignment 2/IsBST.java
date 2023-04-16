@@ -49,3 +49,4 @@ public class IsBST {
         return isBST(root.left, min, root.data) && isBST(root.right, root.data, max);
     }
 }
+// Time Taken: 15 mins
