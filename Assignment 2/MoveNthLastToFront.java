@@ -1,4 +1,4 @@
-// Technique: 
+// Technique: Fixed distance two pointer
 // Time Complexity: O(n) where n is the number of nodes. Traverses the entire list once. Uses a front and back pointer to keep the n+1 spacing so that 
 //                         when the front pointer reaches the end of the list, the back pointer is at the n+1th from the end.
 //                         Then from there swapping pointers are constant operations on the next node to swap it properly;
