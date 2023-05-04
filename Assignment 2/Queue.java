@@ -37,7 +37,7 @@ public class Queue {
 
     // Time Complexity: O(1) - remove the head from the LL and return it
     public int dequeue() {
-        if (head == null)
+        if (isEmpty())
             return -1;
 
         int res = head.data;
