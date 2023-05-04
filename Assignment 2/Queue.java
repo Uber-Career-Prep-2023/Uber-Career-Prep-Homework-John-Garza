@@ -27,11 +27,10 @@ public class Queue {
         Node newNode = new Node(x);
         if (isEmpty()) {
             head = newNode;
+            tail = newNode;
         } else {
-            if (tail == null)
-                tail = newNode;
-            else
-                tail.next = newNode;
+            tail.next = newNode;
+            tail = tail.next;
         }
     }
 
@@ -42,6 +41,10 @@ public class Queue {
 
         int res = head.data;
         head = head.next;
+
+        if (head == null)
+            tail = null;
+
         return res;
     }
 
