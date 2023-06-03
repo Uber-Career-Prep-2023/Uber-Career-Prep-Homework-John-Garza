@@ -1,7 +1,7 @@
 
 // Technique: Queue to store the future numbers
 // Time Complexity: O(k) where k is the number of binary strings to be output
-// Space Complexity: O(k) since creating queue
+// Space Complexity: O(n) since creating queue that stores future numbers
 import java.util.*;
 
 public class FirstKBinaryNumbers {
