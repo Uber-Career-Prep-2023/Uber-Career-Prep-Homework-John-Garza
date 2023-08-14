@@ -1,3 +1,6 @@
+// Technique: Dynamic Programming
+// Time Complexity: O(n) where n is the size of cost array
+// Space Complexity: O(1)
 public class MinCostClimbingStairs {
     public static void main(String[] args) {
         int[] cost1 = { 4, 1, 6, 3, 5, 8 };
@@ -24,3 +27,4 @@ public class MinCostClimbingStairs {
         return Math.min(first, second);
     }
 }
+// Time Taken: 30 mins
