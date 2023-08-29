@@ -1,5 +1,3 @@
-import java.util.*;
-
 // Technique: Dynamic Programming - Memoization
 // Time: O(n^2) since we are finding the nth catalan numbers n times
 // Space: O(n)
