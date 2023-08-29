@@ -6,7 +6,15 @@ import java.util.*;
 
 public class WordBreak {
     public static void main(String[] args) {
+        List<String> dict = Arrays.asList(
+                "elf", "manatee", "quip",
+                "go", "not", "tee",
+                "golf", "note", "teen",
+                "man", "pig");
 
+        System.out.println(wordBreak("mangolf", dict)); // Expect: True
+        System.out.println(wordBreak("manateenotelf", dict)); // Expect: True
+        System.out.println(wordBreak("quipig", dict)); // Expect: False
     }
 
     public static boolean wordBreak(String s, List<String> wordDict) {
